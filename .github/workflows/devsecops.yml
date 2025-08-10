@@ -1,5 +1,4 @@
 name: DevSecOps CI
-name: DevSecOps CI
 
 on:
   push:
@@ -32,5 +31,3 @@ jobs:
 
     - name: Docker Scan
       run: docker scan ishika1204/myjavadockerproject
-
-
