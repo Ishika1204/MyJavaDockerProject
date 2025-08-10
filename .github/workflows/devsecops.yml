@@ -1,4 +1,5 @@
 name: DevSecOps CI
+name: DevSecOps CI
 
 on:
   push:
@@ -27,8 +28,9 @@ jobs:
       working-directory: myapp
 
     - name: Docker Build
-      run: docker build -t ${{ github.repository }} .
+      run: docker build -t ishika1204/myjavadockerproject .
 
     - name: Docker Scan
-      run: docker scan ${{ github.repository }}
+      run: docker scan ishika1204/myjavadockerproject
+
 
